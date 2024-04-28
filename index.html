@@ -4,52 +4,49 @@
 <head>
 <title> Frankie Noguera </title>
 </head>
- 
 <style>
-p {text-align: center;}
-body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-image: linear-gradient(135deg, #5c98ff 10%, #836aff 100%);
-            background-size: 400% 400%;
-            animation: gradientAnimation 5s ease infinite;
-            margin: 0;
-            padding: 0;
- }
-  @keyframes gradientAnimation {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
- img {
-            
-            height: 500px;
-            border-radius: 10px;
-            margin-top: 40px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
- }
-h1 {text-align: center;}
-h3 {text-align: center;} 
- 
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
+    /* Text styling */
+    p, h1, h3 {
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-a:visited {
-  color: purple;
-  background-color: transparent;
-  text-decoration: none;
-}
+    /* Background styling with animation */
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(135deg, #5c98ff 10%, #836aff 100%);
+        background-size: 400% 400%;
+        animation: gradientAnimation 5s ease infinite;
+    }
 
-a:hover {
-  color: black;
-  background-color: transparent;
-  text-decoration: underline;
-}
+    @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Image styling */
+    img {
+        display: block;
+        margin: 40px auto 0; /* Top margin added, auto margin for centering horizontally */
+        height: 500px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Link styling */
+    a:link, a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+    }
 </style>
  
 <body>
