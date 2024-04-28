@@ -4,9 +4,57 @@
 <head>
 <title> Street </title>
 </head>
+<style>
+    /* Text styling */
+    h1, h3 {
+        text-align: center;
+        font: sans-serif;
+        color: white;
+    }
+    p{
+        text-align: center;
+        font: sans-serif;
+        font-size: 45px;
+    }
+    /* Background styling with animation */
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(135deg, #5c98ff 10%, #836aff 100%);
+        background-size: 400% 400%;
+        animation: gradientAnimation 5s ease infinite;
+    }
 
-<body style = "background-color:black; text-align: center" >
- <h1 style='color:white'> Street </h1> 
+    @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    /* Image styling */
+    img {
+        display: block;
+        margin: 40px auto 0; /* Top margin added, auto margin for centering horizontally */
+        height: 500px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Link styling */
+    a:link, a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: black;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+</style>
+<body>
+ <h1 style='color:white'>Street Photography</h1> 
 
  <img src = 'DSC_1919.jpg' alt = DSC_1919.jpg height = 500 > 
 
